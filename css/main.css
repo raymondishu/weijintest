@@ -1,0 +1,304 @@
+/*
+公共样式
+ */
+body {
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+section {
+	/*height: 200px;
+	background-color: #fff;*/
+}
+
+/*
+奇偶选择器
+ */
+section:nth-of-type(2n+1) {
+	background-color: #f5f5f5;
+}
+@font-face {
+	font-family: 'common1';
+	src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'), url('../fonts/MiFie-Web-Font.svg') format('svg'), url('../fonts/MiFie-Web-Font.ttf') format('truetype'), url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'weijinsuo';
+	src: url('../fonts/weijinsuo.eot') format('embedded-opentype'), url('../fonts/MiFie-Web-Font.svg') format('svg'), url('../fonts/weijinsuo.ttf') format('truetype'), url('../fonts/weijinsuo.woff') format('woff');	
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: weijinsuo,common1;
+	font-style: normal;
+}
+
+
+.icon-mobilephone::before {
+	content: "\e908";
+	font-size: 13px;
+}
+.icon-telephone::before {
+	content: "\e909";
+	font-size: 15px;
+}
+
+.icon-logo::before {
+	content: "\e901";
+	font-size: 35px;
+	font-weight:800;
+	color: #333;
+	line-height: 35px;
+	vertical-align: middle;
+}
+.icon-icon::before {
+	content: "\e900";
+	font-size: 35px;
+	color: #E92322;
+	line-height: 35px;
+	vertical-align: middle;
+}
+#header {
+	height: 0%;
+}
+#header > .topbar {
+	height: 40px;
+	border-bottom: 1px solid #c0c0c0;
+	line-height: 40px;
+}
+
+#header>.topbar>.container>.row>div{
+	font-size: 12px;
+	color: #888;
+	height: 40px;
+}
+/*
++选择器，找满足条件后面的元素
+ */
+#header>.topbar>.container>.row>div+div{
+	border-left: 1px solid #c0c0c0;
+}
+#header .mobile-link {
+	font-size: 12px;
+	color: #888;
+	cursor:pointer;
+}
+#header .mobile-link:hover {
+	text-decoration: none;
+}
+
+
+#header .link-common {
+	font-size: 12px;
+	color: #888;
+	cursor:pointer;
+}
+#header .link-common:hover {
+	text-decoration: none;
+}
+
+#header .mobile-link >img{
+	display: none;
+}
+
+#header .mobile-link:hover > img{
+	display: block;
+	position: absolute;
+	top:27px;
+	left: 50%;
+	margin-left: -60px;
+	z-index: 1001;
+}
+
+/*
+###############register################
+ */
+.btn-register,
+.btn-register:active, 
+.btn-register.active { 
+  color: #ffffff; 
+  background-color: #F20808; 
+  border-color: #9FCC0A; 
+} 
+ 
+.btn-register:hover, 
+.btn-register:focus, 
+.open .dropdown-toggle.btn-register { 
+  color: #ffffff; 
+  background-color: #EDF503; 
+  border-color: #9FCC0A; 
+} 
+ 
+.btn-register:active, 
+.btn-register.active, 
+.open .dropdown-toggle.btn-register { 
+  background-image: none; 
+} 
+ 
+.btn-register.disabled, 
+.btn-register[disabled], 
+fieldset[disabled] .btn-register, 
+.btn-register.disabled:hover, 
+.btn-register[disabled]:hover, 
+fieldset[disabled] .btn-register:hover, 
+.btn-register.disabled:focus, 
+.btn-register[disabled]:focus, 
+fieldset[disabled] .btn-register:focus, 
+.btn-register.disabled:active, 
+.btn-register[disabled]:active, 
+fieldset[disabled] .btn-register:active, 
+.btn-register.disabled.active, 
+.btn-register[disabled].active, 
+fieldset[disabled] .btn-register.active { 
+  background-color: #F20808; 
+  border-color: #9FCC0A; 
+} 
+ 
+.btn-register .badge { 
+  color: #F20808; 
+  background-color: #ffffff; 
+}
+
+/*
+###############register################
+ */
+
+/*
+navbar-itemstyle
+ */
+.navbar-itemstyle {
+  background-color: #fff;
+  border-color: #f5f5f5;
+}
+.navbar-itemstyle .navbar-brand {
+  color: #777;
+}
+.navbar-itemstyle .navbar-brand:hover,
+.navbar-itemstyle .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-itemstyle .navbar-text {
+  color: #777;
+}
+.navbar-itemstyle .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-itemstyle .navbar-nav > li > a:hover,
+.navbar-itemstyle .navbar-nav > li > a:focus {
+  color: #555;
+  background-color: transparent;
+  border-bottom: 2px solid #E92322;
+}
+.navbar-itemstyle .navbar-nav > .active > a,
+.navbar-itemstyle .navbar-nav > .active > a:hover,
+.navbar-itemstyle .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: transparent;
+  border-bottom: 2px solid #E92322;
+}
+.navbar-itemstyle .navbar-nav > .disabled > a,
+.navbar-itemstyle .navbar-nav > .disabled > a:hover,
+.navbar-itemstyle .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-itemstyle .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-itemstyle .navbar-toggle:hover,
+.navbar-itemstyle .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-itemstyle .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-itemstyle .navbar-collapse,
+.navbar-itemstyle .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-itemstyle .navbar-nav > .open > a,
+.navbar-itemstyle .navbar-nav > .open > a:hover,
+.navbar-itemstyle .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+  }
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-itemstyle .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-itemstyle .navbar-link {
+  color: #777;
+}
+.navbar-itemstyle .navbar-link:hover {
+  color: #333;
+}
+.navbar-itemstyle .btn-link {
+  color: #777;
+}
+.navbar-itemstyle .btn-link:hover,
+.navbar-itemstyle .btn-link:focus {
+  color: #333;
+}
+.navbar-itemstyle .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-itemstyle .btn-link:hover,
+.navbar-itemstyle .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-itemstyle .btn-link:focus {
+  color: #ccc;
+}
+
+/*
+navbar-itemstyle
+ */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+/*
+navbar 向下的margin
+ */
+
+/*
+轮播图
+ */
+#carousel{
+}
+
+#carousel > .carousel-inner > .item {
+	height: 410px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+/*
+媒体查询控制小屏幕的高度
+ */
+@media(max-width:768px) {
+	#carousel > .carousel-inner > .item {
+		height: 0%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+}
+
+#carousel > .carousel-inner > .item > img {
+	width: 100%;
+}
