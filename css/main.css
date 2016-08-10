@@ -1,5 +1,5 @@
 /*
-公共样式
+å…¬å…±æ ·å¼
  */
 body {
 	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
@@ -10,7 +10,7 @@ section {
 }
 
 /*
-奇偶选择器
+å¥‡å¶é€‰æ‹©å™¨
  */
 section:nth-of-type(2n+1) {
 	background-color: #f5f5f5;
@@ -70,7 +70,7 @@ section:nth-of-type(2n+1) {
 	height: 40px;
 }
 /*
-+选择器，找满足条件后面的元素
++é€‰æ‹©å™¨ï¼Œæ‰¾æ»¡è¶³æ¡ä»¶åŽé¢çš„å…ƒç´ 
  */
 #header>.topbar>.container>.row>div+div{
 	border-left: 1px solid #c0c0c0;
@@ -272,11 +272,11 @@ navbar-itemstyle
   border: 1px solid transparent;
 }
 /*
-navbar 向下的margin
+navbar å‘ä¸‹çš„margin
  */
 
 /*
-轮播图
+è½®æ’­å›¾
  */
 #carousel{
 }
@@ -288,7 +288,7 @@ navbar 向下的margin
 	background-size: cover;
 }
 /*
-媒体查询控制小屏幕的高度
+åª’ä½“æŸ¥è¯¢æŽ§åˆ¶å°å±å¹•çš„é«˜åº¦
  */
 @media(max-width:768px) {
 	#carousel > .carousel-inner > .item {
@@ -398,3 +398,84 @@ navbar 向下的margin
 #feature a .media-body {
   padding: 5px 0;
 }
+
+/*
+é¢„çº¦æ¨¡å—
+*/
+#booking {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+#booking > .container{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#booking > .container > p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#booking > .container > p > span {
+  color: #e9232c;
+}
+
+#booking > .container > p i {
+  font-size: 20px;
+}
+
+#booking > .container > p > a:hover {
+  text-decoration: none;
+}
+
+#booking > .container > p > .just-now {
+  color: #e9232c;
+  border-bottom: 1px dashed #e9232c;
+}
+
+#booking > .container > p > .quick-learn {
+  color: #333;
+}
+
+#products > .container > .nav-tabs{
+
+border-bottom: 1px solid #E69C9C;
+}
+
+#products > .container > .nav-tabs > li{
+
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	
+border: none;
+	
+border-bottom: 4px solid #EA1111;
+}
+
+#products > .container > .nav-tabs > li >a{
+color: #0C0C0C;
+}
+
+.panel-item{
+  height: 150px;
+}
+
+#products > .container > .tab-content .row .panel-item > .panel-body{
+  background-color: #111111;
+  height: 150px;
+  float: right;
+  width: 120px;
+  padding: 0px;
+  position: relative;
+}
+
+#products > .container > .tab-content .row .panel-item > .panel-footer{
+  background-color: #aaaaaa;
+  /* float: left; */
+  margin-right: 120px;
+  height: 150px;
+  /* position:static; */
+}
+
+
